@@ -9,11 +9,12 @@ namespace Lab1cs
     internal class Vector
     {
         private readonly double x, y;
-
         public Vector(double x = 0, double y = 0)
         {
-            this.x = x;
-            this.y = y;
+            if (x >= 0) this.x = x;
+            else this.x = 0;
+            if(y>=0) this.y = y;
+            else this.y = 0;
         }
 
         public void PrintCoordinates()

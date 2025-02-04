@@ -4,8 +4,10 @@ using namespace std;
 
 Vector::Vector(double x, double y)
 {
-    this->x = x;
-    this->y = y;
+    if (x >= 0) this->x = x;
+    else this->x = 0;
+    if (y >= 0) this->y = y;
+    else this->y = 0;
 }
 
 void Vector::printCoordinates() {
