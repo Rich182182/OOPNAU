@@ -4,8 +4,11 @@ using namespace std;
 
 int main()
 {
-    Vector v(5, 4);
-    v.printCoordinates();
-    v.printPolarCoordinates();
+    std::cout << "Add Coordinates x and y:" << std::endl;
+    double x, y;
+    std::cin >> x >> y;
+    Vector v(x, y);
+    cout<<v.printCoordinates()<<endl;
+    cout<<v.printPolarCoordinates()<<endl;
     return 0;
 }

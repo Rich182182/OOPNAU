@@ -11,15 +11,13 @@ namespace Lab1cs
         private readonly double x, y;
         public Vector(double x = 0, double y = 0)
         {
-            if (x >= 0) this.x = x;
-            else this.x = 0;
-            if(y>=0) this.y = y;
-            else this.y = 0;
+            this.x = x;
+            this.y = y;
         }
 
-        public void PrintCoordinates()
+        public string PrintCoordinates()
         {
-            Console.WriteLine($"Coordinates: ({x}, {y})");
+            return $"Coordinates: ({x}, {y})";
         }
 
         private double Magnitude()
@@ -32,9 +30,9 @@ namespace Lab1cs
             return Math.Atan2(y, x);
         }
 
-        public void PrintPolarCoordinates()
+        public string PrintPolarCoordinates()
         {
-            Console.WriteLine($"Polar Coordinates: ({Magnitude()}, {Angle()})");
+            return $"Polar Coordinates: ({Magnitude()}, {Angle()})";
         }
     }
 }

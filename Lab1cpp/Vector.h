@@ -1,5 +1,6 @@
 #pragma once
-
+#include<string>
+using namespace std;
 class Vector
 {
 private:
@@ -7,9 +8,9 @@ private:
 
 public:
     Vector(double x = 0, double y = 0);
-    void printCoordinates();
+    string printCoordinates();
     double magnitude();
     double angle();
-    void printPolarCoordinates();
+    string printPolarCoordinates();
 };
 

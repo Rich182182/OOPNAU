@@ -1,19 +1,17 @@
 #include "Vector.h"
 #include <iostream>
+#include<string>
 using namespace std;
 
 Vector::Vector(double x, double y)
 {
-    if (x >= 0) this->x = x;
-    else this->x = 0;
-    if (y >= 0) this->y = y;
-    else this->y = 0;
+    this->x = x;
+    this->y = y;
 }
 
-void Vector::printCoordinates() {
-    cout << "Coordinates: (" << x << ", " << y << ")"<< endl;
+string Vector::printCoordinates() {
+    return ("Coordinates: (" + std::to_string(x) + ", " + to_string(y) + ")");
 }
-
 double Vector::magnitude() {
     return sqrt(x * x + y * y);
 }
@@ -21,6 +19,6 @@ double Vector::magnitude() {
 double Vector::angle() {
     return atan2(y, x);
 }
-void Vector::printPolarCoordinates() {
-    cout << "PolarCoordinates: " << magnitude() << angle() << endl;
+string Vector::printPolarCoordinates() {
+    return "PolarCoordinates: " + to_string(magnitude()) + ", " + to_string(angle());
 }
