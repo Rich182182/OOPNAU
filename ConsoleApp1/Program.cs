@@ -2,7 +2,7 @@
 {
     public static void Main(string[] args)
     {
-        int num1;
+        int num1 = 30;
         int num2 = 20;
         Test(out num1, ref num2);
     }

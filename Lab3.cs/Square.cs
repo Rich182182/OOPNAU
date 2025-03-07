@@ -14,7 +14,7 @@ namespace Lab3
 
         public Square() : this(0, 0, 1) { }
 
-        public Square(double x, double y, double side)
+        public Square(double x, double y, double side = 5)
         {
             this.x = x;
             this.y = y;
@@ -42,7 +42,10 @@ namespace Lab3
         {
             return 4 * side;
         }
-
+        public double GetPerimeter(int x)
+        {
+            return x * side;
+        }
         public static Square operator +(Square a, Square b)
         {
             return new Square(a.x, a.y, a.side + b.side);

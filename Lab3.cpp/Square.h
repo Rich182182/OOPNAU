@@ -8,7 +8,7 @@ public:
     const double side;
 
     Square();
-    Square(double x, double y, double side);
+    Square(double x, double y, double side = 5);
     Square(const Square& other);
     ~Square();
 

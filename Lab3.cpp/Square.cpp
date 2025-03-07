@@ -4,7 +4,7 @@
 
 Square::Square() : x(0), y(0), side(1) {}
 
-Square::Square(double x, double y, double side) : x(x), y(y), side(side) {}
+Square::Square(double x, double y, double side = 5) : x(x), y(y), side(side) {}
 
 Square::Square(const Square& other) : x(other.x), y(other.y), side(other.side) {}
 

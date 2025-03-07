@@ -8,7 +8,7 @@ int main() {
 
     Square square1(x, y, side);
     Square square2(square1);
-    Square square3(2, 2, 6);
+    Square square3(2, 2);
 
     Square square4 = square2 + square3;
 
