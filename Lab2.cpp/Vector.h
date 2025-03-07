@@ -8,7 +8,6 @@ public:
     Vector();
 
     Vector(double x, double y);
-
     Vector(const Vector& other);
 
     ~Vector();

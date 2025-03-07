@@ -10,7 +10,6 @@ int main() {
     vector.print();
 
     std::cout << "Vector length: " << vector.length() << std::endl;
-
     double radius, angle;
     vector.getPolarCoordinates(radius, angle);
     std::cout << "Polar coordinates: Radius = " << radius << ", Angle = " << angle << " radians" << std::endl;

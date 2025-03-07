@@ -15,7 +15,7 @@ namespace Lab1cs
 
         public string PrintCoordinates()
         {
-            return $"Coordinates: ({x}, {y})";
+            return $"Coorsdinates: ({x}, {y})";
         }
 
         private double Magnitude()
