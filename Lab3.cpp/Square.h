@@ -14,6 +14,7 @@ public:
 
     double GetArea();
     double GetPerimeter();
+    double GetPerimeter(double x);
     Square operator+(const Square& other);
     Square operator/(double value);
     std::string ToString();

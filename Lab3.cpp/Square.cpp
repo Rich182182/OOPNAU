@@ -19,6 +19,9 @@ double Square::GetArea() {
 double Square::GetPerimeter() {
     return 4 * side;
 }
+double Square::GetPerimeter(double x) {
+    return x * side;
+}
 
 Square Square::operator+(const Square& other) {
     return Square(x, y, side + other.side);
