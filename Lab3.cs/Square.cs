@@ -8,9 +8,21 @@ namespace Lab3
 {
     public class Square
     {
-        public readonly double x;
-        public readonly double y;
-        public readonly double side;
+        int id;
+
+        public int Site
+        {
+            set
+            {
+                if (value < 0) id = value;
+            }
+      
+        }
+
+
+        public  double x;
+        public  double y;
+        public  double side;
 
         public Square() : this(0, 0, 1) { }
 
@@ -26,6 +38,13 @@ namespace Lab3
             x = other.x;
             y = other.y;
             side = other.side;
+            other.x = 52;
+        }
+        public static void Play(Square obj)
+        {
+            Square my = new Square();
+            my.x = 65;
+            obj.x = my.x;
         }
 
         ~Square()
@@ -42,9 +61,9 @@ namespace Lab3
         {
             return 4 * side;
         }
-        public double GetPerimeter(int x)
+        public static double  GetPerimeter(int x)
         {
-            return x * side;
+            return x;
         }
         public static Square operator +(Square a, Square b)
         {

@@ -4,6 +4,12 @@ namespace Lab3
 {
     class Program
     {
+        public static void Play(Square obj)
+        {
+            Square my = new Square();
+            my.x = 65;
+            obj = my;
+        }
         static void Main()
         {
             Console.Write("Enter square origin and side length (x y side): ");
@@ -11,12 +17,12 @@ namespace Lab3
             double x = double.Parse(input[0]);
             double y = double.Parse(input[1]);
             double side = double.Parse(input[2]);
-
-            Square square1 = new Square(x, y, side);
-            Square square2 = new Square(other: square1);
+            new Square obj;
+            Square square1 = new Square();
+            Play(square1);
+            Square square2 = new Square(square1);
             Square square3 = new Square(2, 2);
             var per1 = square1.GetPerimeter();
-            var per2 = square2.GetPerimeter(4);
             square3 = new Square(square3.x, square3.y, square3.side + 5);
             Square square4 = square2 + square3;
 

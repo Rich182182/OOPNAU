@@ -5,11 +5,11 @@ int main() {
     std::cout << "Enter square origin and side length (x y side): ";
     double x, y, side;
     std::cin >> x >> y >> side;
-
+    Square* obj = new Square(x, y, side);
     Square square1(x, y, side);
     Square square2(square1);
     Square square3(2, 2);
-
+    Square *obj;
     Square square4 = square2 + square3;
 
     std::cout << "Square1:" << std::endl;

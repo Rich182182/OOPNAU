@@ -2,7 +2,6 @@
 #include <string>
 
 class Square {
-public:
     const double x;
     const double y;
     const double side;
@@ -11,7 +10,7 @@ public:
     Square(double x, double y, double side = 5);
     Square(const Square& other);
     ~Square();
-
+    void Play(Square* obj);
     double GetArea();
     double GetPerimeter();
     double GetPerimeter(double x);

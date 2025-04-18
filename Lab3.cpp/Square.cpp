@@ -23,7 +23,7 @@ double Square::GetPerimeter(double x) {
     return x * side;
 }
 
-Square Square::operator+(const Square& other) {
+ Square Square::operator+(const Square& other) {
     return Square(x, y, side + other.side);
 }
 
